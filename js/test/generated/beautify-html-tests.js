@@ -1215,6 +1215,14 @@ function run_html_tests(test_obj, Urlencoded, js_beautify, html_beautify, css_be
 
 
         //============================================================
+        // Newline after closing tag
+        reset_options();
+        test_fragment(
+            '<div>\nblah<h1>header</h1>blah\n</div>',
+            '<div>\nblah\n<h1>header</h1>\nblah\n</div>');
+
+
+        //============================================================
         // New Test Suite
         reset_options();
 

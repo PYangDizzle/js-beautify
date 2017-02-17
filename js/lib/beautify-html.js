@@ -980,6 +980,9 @@
                         }
                     }
                     multi_parser.print_token(multi_parser.token_text);
+                    // YANG
+                    multi_parser.print_newline(false, multi_parser.output);
+                    // YANG end
                     multi_parser.current_mode = 'CONTENT';
                     break;
                 case 'TK_TAG_SINGLE':
